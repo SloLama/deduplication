@@ -12,3 +12,8 @@ Script *onion_deduplicate.sh* performs the near-deduplication on input file usin
 using 9-grams and  duplicate content threshold 0.9.
 
 Script *run_deduplication.sh* contains calls of all previous scripts.
+
+The final deduplication (of merged Slovene corpora) was performed on SLING due to memory requirements. Dockerfile and
+sbatch script were added for running the deduplication there:
+- Dockerfile builds the Onion image for SLING (image is already uploaded to Dockerhub as [dvres/onion](https://hub.docker.com/r/dvres/onion/tags)).
+- Sbatch script contains the execution command for deduplication inside the singularity container.
