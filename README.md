@@ -1,6 +1,6 @@
 # Deduplication
 
-This repository contains the scripts using for performing the near-deduplication with Onion.
+This repository contains the scripts used for performing the near-deduplication with Onion.
 
 Script *prepare_vert_for_onion.sh* replaces all <text> tags in given vert file with <doc> tags (by using <doc> tags Onion
 automatically removes all documents with all paragraphs removed).
