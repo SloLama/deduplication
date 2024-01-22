@@ -1,4 +1,5 @@
 #!/bin/bash
 
-datapath="../Podatki/onion_dedup"
-cat ${datapath}/*.vert > ${datapath}/sl_all.vert
+datapath=$1
+f_out=$2
+cat ${datapath}/*.vert > ${datapath}/${f_out}
